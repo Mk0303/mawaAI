@@ -1,0 +1,7 @@
+# Sidecar merged with Mani's config via --config. No secrets.
+# This box's HTTP (port 80) CRL fetch returns an empty 500, which breaks
+# session auth. Official workaround: fetch the CRL over HTTPS instead.
+# https://ngrok.com/docs/gateway/agent/connectivity
+version: "3"
+agent:
+  crl_url: https://crl.ngrok-agent.com/ngrok.crl

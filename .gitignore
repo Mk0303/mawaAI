@@ -1,0 +1,6 @@
+# Not a git repo (by design). Kept so a future repo push skips these.
+node_modules/
+.next/
+data/
+.env.local
+*.zip
